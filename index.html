@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIDEOMAG</title>
+    <link rel="stylesheet" href="Site_Projet_Web (1)/Site_Projet_Web/Site Projet Web/public/style/style.css">
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <div class="entete">
+                <img src="Site_Projet_Web (1)/Site_Projet_Web/Site Projet Web/public/images/logo.webp" alt="logo" id="logo">
+                <div class="menu-toggle" id="menu-toggle">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <ul id="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="#search">Recherche</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="hero">
+        <h1>Bienvenue sur VIDEOMAG</h1>
+        <p>Votre source ultime pour découvrir des films</p>
+    </section>
+
+    <section id="search">
+        <h2>Recherche de Films</h2>
+        <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Rechercher un film par titre...">
+            <select id="genreSelect">
+                <option value="">Genre...</option>
+            </select>
+            <input type="number" id="yearInput" placeholder="Année..." min="1900" max="2050">
+            <select id="ratingSelect">
+                <option value="">Note...</option>
+                <option value="high">Les mieux notés</option>
+            </select>
+            <button type="submit" class="bouton">Rechercher</button>
+        </form>
+    </section>
+
+    <section id="results-recent">
+        <h3 id="results-title">Récents</h3>
+        <div class="grid-container"></div>
+        <div id="pagination-recent" class="pagination"></div>
+    </section>
+
+    <section id="results-all">
+        <h3>Toutes les suggestions</h3>
+        <div class="grid-container"></div>
+        <div id="pagination-all" class="pagination"></div>
+    </section>
+
+    <section id="about">
+        <h2>À propos de VIDEOMAG</h2>
+        <p>VIDEOMAG est une plateforme dédiée à la découverte et à l'exploration de films. Que vous soyez à la recherche des derniers blockbusters ou de joyaux cachés, VIDEOMAG est là pour vous aider à trouver ce que vous cherchez.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contactez-nous</h2>
+        <p>Pour toute question, suggestion ou demande, veuillez nous contacter à l'adresse suivante : contact@videomag.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 VIDEOMAG. Tous droits réservés.</p>
+    </footer>
+
+    <script src="Site_Projet_Web (1)/Site_Projet_Web/Site Projet Web/scripts/fonction.js"></script>
+</body>
+</html>
